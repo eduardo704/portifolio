@@ -247,7 +247,7 @@ module.exports = function (grunt) {
         flow: {
           html: {
             steps: {
-              js: ['concat',],
+              js: ['concat'],
               css: ['cssmin']
             },
             post: {}
@@ -341,7 +341,7 @@ module.exports = function (grunt) {
     ngtemplates: {
       dist: {
         options: {
-          module: 'portifolioApp',
+          module: 'myApp',
           htmlmin: '<%= htmlmin.dist.options %>',
           usemin: 'scripts/scripts.js'
         },
@@ -499,7 +499,7 @@ module.exports = function (grunt) {
     'copy:dist',
     'cdnify',
     'cssmin',
-  // 'uglify',
+ // 'uglify',
     'filerev',
     'usemin',
     'htmlmin'

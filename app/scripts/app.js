@@ -5,7 +5,7 @@ var myApp=angular.module('myApp', [
   'ngRoute',
   'myApp.slidesComponent', 
   'ngMaterial',
-  'ui.bootstrap'
+ 'ui.bootstrap'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
   $locationProvider.hashPrefix('!');

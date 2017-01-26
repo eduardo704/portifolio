@@ -4,7 +4,7 @@ angular.module('myApp.slidesComponent', ['ngRoute'])
 
   .config(['$routeProvider', function ($routeProvider) {
     $routeProvider.when('/view1', {
-      templateUrl: 'views/slides.template.html',
+      templateUrl: 'slides.template.html',
       controller: 'SlidesController'
     });
   }])
