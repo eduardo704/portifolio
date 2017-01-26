@@ -1,0 +1,59 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu>li {
+  display: inline;
+}
+
+.menu>li+li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.container1 {
+  display: flex;
+  flex-flow: row wrap;
+  width: 80%;
+  margin: auto;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+.slide {
+  flex-grow: 1;
+}
+
+.top-container {
+  width: 80%;
+  margin: auto;
+}
+
+.list-container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+.list-item-custom {
+  flex-grow: 1;
+  flex-basis: 25%;
+  border: 1px solid;
+  border-color: gray;
+}
